@@ -1,46 +1,43 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import React from "react";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaLinkedinIn,
+
+  FaWhatsapp,
+} from "react-icons/fa";
+
 const Media = () => {
   return (
-    <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
-        <div>
+    <section>
+        <div className="pb-10">
           <h2 className="text-base uppercase font-titleFont mb-4">
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
+            <a
+              href="https://www.facebook.com/kamran.islam.7796"
+              className="bannerIcon"
+            >
               <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kamran-islam/"
+              className="bannerIcon"
+            >
               <FaLinkedinIn />
-            </span>
+            </a>
+            <a href="https://github.com/Kamranislam0123" className="bannerIcon">
+              <FaGithub />
+            </a>
+            <a href=" https://wa.me/1771971072" className="bannerIcon">
+              <FaWhatsapp />
+            </a>
           </div>
         </div>
-        <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILL ON
-          </h2>
-          <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaReact />
-            </span>
-            <span className="bannerIcon">
-              <SiNextdotjs />
-            </span>
-            <span className="bannerIcon">
-              <SiTailwindcss />
-            </span>
-            <span className="bannerIcon">
-              <SiFigma />
-            </span>
-          </div>
-        </div>
-      </div>
-  )
-}
+    </section>
+    
+  );
+};
 
-export default Media
+export default Media;

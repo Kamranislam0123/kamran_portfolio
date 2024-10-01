@@ -11,7 +11,7 @@ const LeftBanner = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+    <div className="w-full lgl:w-1/2 flex flex-col ">
       <div className="flex flex-col gap-5 py-12">
         <h1 className="text-6xl font-bold text-white pt-10">
           Hi, I'm <span className="text-designColor capitalize">Md Kamranul Islam</span>

@@ -23,7 +23,9 @@ const Card = ({item:{title,des,icon}}) => {
             <h2 className="text-xl md:text-2xl font-titleFont font-bold text-gray-300">
               {title}
             </h2>
-            <p className="base">{des}</p>
+            <div className="base max-h-28 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-designColor scrollbar-track-gray-200">
+              <p>{des}</p>
+            </div>
             <span className="text-2xl text-designColor">
               <HiArrowRight />
             </span>
