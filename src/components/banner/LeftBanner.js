@@ -3,6 +3,15 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Media from './Media';
 
 const LeftBanner = () => {
+  // Function to calculate years of experience
+  const calculateExperience = () => {
+    const startDate = new Date('2023-02-01');
+    const currentDate = new Date();
+    const diffInMilliseconds = currentDate - startDate;
+    const years = diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+    return years.toFixed(1); // Round to one decimal place
+  };
+
   const [text] = useTypewriter({
     words: ["Professional Coder.", "Front End Developer.", "UI/UX Designer.", "Product Designer."],
     loop: true,
@@ -25,7 +34,7 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          CSE graduate with 1.7 years experience in programming HTML, CSS, Bootstrap, JavaScript, React
+          CSE graduate with {calculateExperience()} years experience in programming HTML, CSS, Bootstrap, JavaScript, React
           NextJs and database management with MongoDB and MySQL. Additionally my design proficiency
           extends to Figma, where I craft user-centric interfaces for a delightful experience. I'm eager to
           contribute to innovative projects for full time employment.

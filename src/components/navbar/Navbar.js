@@ -9,7 +9,9 @@ import { navLinksdata } from "../../constants";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div className=" w-4/5 h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
+    <div className="w-[80%] px-4 rounded-b-xl h-24 sticky top-0 z-50 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600
+        bg-opacity-70 backdrop-filter backdrop-blur-lg bg-bodyColor
+        shadow-lg">
       <div className="w-20 h-20 flex flex-row items-end">
         <img src={logo} alt="logo" />
         <div className="items-center ml-2 text-xl font-mono">
@@ -48,11 +50,11 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
+                {/* <p className="text-sm text-gray-400 mt-2">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Earum soluta perspiciatis molestias enim cum repellat, magnam
                   exercitationem distinctio aliquid nam.
-                </p>
+                </p> */}
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (

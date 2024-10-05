@@ -7,9 +7,9 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 items-center border-b-[1px] font-titleFont border-b-black"
+      className="w-full max-w-6xl mx-auto pt-10 pb-10 flex flex-col gap-5 xl:gap-0 items-center border-b-[1px] font-titleFont border-b-black"
     >
-      <div className="lg:flex lg:flex-row w-full ">
+      <div className="w-full flex flex-col lg:flex-row lg:justify-between">
         <LeftBanner />
         <RightBanner />
       </div>

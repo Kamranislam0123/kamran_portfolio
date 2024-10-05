@@ -3,9 +3,9 @@ import { profile } from "../../assets/index";
 
 const RightBanner = () => {
   return (
-    <div className="w-full lgl:w-1/2 flex justify-center items-center relative">
+    <div className="w-full lgl:w-1/2 hidden md:flex justify-center items-center relative ">
       <img
-        className="w-full h-50 pl-5"
+        className="w-full h-auto pl-5 transform scale-125 transition-transform duration-300 hover:scale-135"
         src={profile}
         alt="bannerImg"
       />
