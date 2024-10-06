@@ -12,10 +12,12 @@ const Navbar = () => {
     <div className="w-[80%] px-4 rounded-b-xl h-24 sticky top-0 z-50 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600
         bg-opacity-70 backdrop-filter backdrop-blur-lg bg-bodyColor
         shadow-lg">
-      <div className="w-20 h-20 flex flex-row items-end">
-        <img src={logo} alt="logo" />
-        <div className="items-center ml-2 text-xl font-mono">
-          Portfolio
+      <div className="w-20 h-20 flex flex-row items-center justify-center">
+        <div className="flex flex-row items-center">
+          <img src={logo} alt="logo" className="w-16 h-16" />
+          <div className="items-center ml-2 text-xl font-mono hidden mdl:inline-flex ">
+            Portfolio
+          </div>
         </div>
       </div>
 
@@ -41,12 +43,12 @@ const Navbar = () => {
         </ul>
         <span
           onClick={() => setShowMenu(!showMenu)}
-          className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
+          className="text-xl mdl:hidden bg-black w-16 h-16 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
         >
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
+          <div className="w-[80%] h-auto overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
