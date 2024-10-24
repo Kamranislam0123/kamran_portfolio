@@ -1,7 +1,7 @@
 // Projects.jsx
 import React from 'react';
 import Title from '../layouts/Title';
-import { ecommerce,portfolio,lms,cns,library,rmj} from "../../assets/index";
+import { ecommerce,portfolio,lms,cns,library,rmj,qunar} from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -57,7 +57,14 @@ const Projects = () => {
           des="An enhanced version Learning Management Templat with additional features and improved UI."
           src={lms}
           gitLink="https://github.com/Kamranislam0123/lms" // Replace with your GitHub URL
-          liveLink="https://yourdomain.com/chatting-app-v2" // Replace with your live site URL
+          liveLink="https://cheery-alfajores-3427d2.netlify.app/" // Replace with your live site URL
+        />
+        <ProjectsCard
+          title="Car Showroom Template"
+          des="A modern car showroom template designed for showcasing vehicles with advanced search filters and detailed vehicle information."
+          src={qunar}
+          gitLink="https://github.com/Kamranislam0123/car-buy-sale" // Replace with your GitHub URL
+          liveLink="https://exquisite-pothos-064645.netlify.app/" // Replace with your live site URL
         />
       </div>
     </section>

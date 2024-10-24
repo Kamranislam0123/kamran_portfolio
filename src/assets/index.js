@@ -13,6 +13,7 @@ import cns from "./images/projects/csn.png";
 import library from "./images/projects/library.png";
 import rmj from "./images/projects/rmjautos.webp";
 import ecommerce from "./images/projects/ai-ecommerce.webp";
+import qunar from "./images/projects/Qunar Home page.png"
 
 export {
   logo,
@@ -29,6 +30,7 @@ export {
   cns,
   library,
   rmj,
-  ecommerce
+  ecommerce,
+  qunar
 
 };
